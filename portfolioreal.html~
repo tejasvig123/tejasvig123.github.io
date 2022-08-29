@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1>My Portfolio!</h1>
+      <div style="padding: 7px">
+	<a href="portfolio.html" class='navBar'>About Me</a>
+	&nbsp; &nbsp;
+	<a href="portfolioreal.html" class='navBar'>Portfolio</a>
+	&nbsp; &nbsp;
+	<a href="isp.html" class='navBar'>ISP</a>
+      </div>
+      <main>
+
+	<header>
+	  <h3>Why is my digital portfolio important to me?</h3>
+	</header>
+	<h4>My digital portfolio is important to me because it showcases all of my best work in a neat and concise way. Another reason it is important is because you can send the portfolio you make to jobs for interviews and etc. and potentially start working just because of something you made in CS 2. The last reason I think portfolios are important is because you can look back at your old projects and think of what you improved on and what you need to improve on, which I think is really nice.</h4>
+	<h3>Some classes I took!</h3>
+	<h4>Classes that I took in high school and outside include CS I, BYJUS Future School, Girls Who Code Self Paced Program, and CS II which I am taking right now.<h4>
+	    <img src="https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1566836043/1566836041.jpg" alt="picture of a person coding, face is not shown">
+      </main>
+      </html>
