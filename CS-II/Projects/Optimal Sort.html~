@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1>Optimal Sorting</h1>
+      <div style="padding: 7px">
+	<a href="../../" class='navBar'>About Me</a>
+	&nbsp; &nbsp;
+	<a href="../portfolioreal.html" class='navBar'>Portfolio</a>
+	&nbsp; &nbsp;
+	<a href="isp.html" class='navBar'>ISP</a>
+	&nbsp; &nbsp;
+	<a href="fingerprints.html" class='navBar'>Fingerprints</a>
+	&nbsp; &nbsp;
+	<a href="AI Sentience.html" class='navBar'>AI Sentience</a>
+	&nbsp; &nbsp;
+	<a href="Optimal Sort.html" class='navBar'>Optimal Sort</a>
+      </div>
+
+      <main>
+
+	<p> Students: Oliver Hankins, Cameron Farley, Tejasvi Gutta, Ayaan</p>
+
+	<img src="https://i.postimg.cc/HszyVZ7V/optimal-sorting-flowchart.png" alt="flowchart for optimal sorting"/>
+
+	<a href="https://docs.google.com/spreadsheets/d/1dLZph44IJSb284MJU8-0RXpuXd4iR6u1IM-Px9kAWMg/edit?usp=sharing">Spreadsheet for the times</a>
+	
+
+     

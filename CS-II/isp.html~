@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>About my ISP!</h1>
+      </header>
+    <div style="padding: 7px">
+      <a href="../index.html" class='navBar'>About Me</a>
+      &nbsp; &nbsp;
+      <a href="portfolioreal.html" class='navBar'>Portfolio</a>
+      &nbsp; &nbsp;
+      <a href="isp.html" class='navBar'>ISP</a>
+      &nbsp; &nbsp;
+      <a href="Essays/fingerprints.html" class='navBar'>Fingerprints</a>
+      &nbsp; &nbsp;
+      <a href="Essays/AI Sentience.html" class='navBar'>AI Sentience</a>
+      &nbsp; &nbsp;
+      <a href="CS-II/Projects/Optimal Sort.html" class='navBar'>Optimal Sort</a>
+    </div>
+
+    <main>
+
+      <header>
+	<h2>Here you will learn all about the ISP I did last year such as the ups and downs, the concept, and the conclusion.</h2>
+      </header>
+
+      <p>First of all, the concept of the game is based off of an old Mario game called Paper Mario: The Thousand Year Door. The game has 10 levels with a certain amount of doors in each level and you must guess which door will get you to the next level. The number of doors also increase every level so that the game will be harder. The player is seeing through the eyes of "Zowser" , Bowser's alternate double, to save "Meek" Meach from the evil Zario. This game was designed to help players better their memory, for example, if you beat this game, that means that you memorized 10 levels worth of information which is a lot, and would benefit you in your daily life.</p>
+      <img src="https://assets-prd.ignimgs.com/2021/12/20/papermario100year-1640028954193.jpg" alt="cover of the game Paper Mario: The thousand year door">
+      <p>The motivation for this game was that me and my partner both had a love for the mario games, especially the retro ones so we really wanted to base our project off of one of those(and we really didn't want to make a platform game, we were kinda lazy).Some code segments that we used include enqueueTransitionScene and having the door open for when you prressed the right alphabet.</p>
+      <img src="https://i.postimg.cc/J4TyBjrc/transition-Scene-Code.jpg" alt="snippet of my code used for transitioning in between scenes">
+
+      <p>Some things went as expected and some things didn't. For example, we were orignially supposed to have a character who could run, stop and jump but we were on such a time crunch that we scrapped all of that and instaed used keys to navigate through the levels. We were also supposed to have a final boss battle between Zowser and Zario but we realized that was too unidealistic so we scrapped that too. Some things that stayed though were the art that I drew and the idea to increase doors each level.</p>
+      <img src="https://i.postimg.cc/QdLbvL7y/zario.jpg" alt="image of zario, the villain from our game">
+      <p>Last year in CS, I learned a lot about Boolean Algebra, the basic syntaxes such as if conditions, while loops, for loops, and etc. I also learned how to make a game and I learned all about the User interface. I also learned how to read binary, hexadecimal, and a ton of other code.</p>

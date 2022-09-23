@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1>Fingerprints</h1>
+    </header>
+    <div style="padding: 7px">
+      <a href="../../index.html" class='navBar'>About Me</a>
+      &nbsp; &nbsp;
+      <a href="../portfolioreal.html" class='navBar'>Portfolio</a>
+      &nbsp; &nbsp;
+      <a href="../isp.html" class='navBar'>ISP</a>
+      &nbsp; &nbsp;
+      <a href="Essays/fingerprints.html" class='navBar'>Fingerprints</a>
+      &nbsp; &nbsp;
+      <a href="AI Sentience.html" class='navBar'>AI Sentience</a>
+      &nbsp; &nbsp;
+      <a href="CS-II/Projects/Optimal Sort.html" class='navBar'>Optimal Sort</a>
+    </div>
+
+    <main>
+      <h2>Questions</h2>
+      <h3>Tejasvi Gutta</h3>
+      <h3>Allen ISD Steam Center</h3>
+      <h3>Advanced Computer Science II</h3>
+      <h3>Mr.Ben-Yaakov</h3>
+      <h3>September 9th</h3>
+<p> Two purposes of a secure HTTPS connection is that it secures communication and the data transfer between the user and the website. It also encrypts all the message contents. An HTTPS Proxy Appliance is something that secures a web server and have a "gurantee of Internet browser privacy and security"(Gibson 2020 p1). An MITM is short for "man in the middle attack" which is a cyberattack where communication between two parties is intercepted often to steal personal information and corrupt data. This presents many risks because if someone stole your data such as your credit card number they could use that number and sell it to other third party dealers which would mean a loss of money. A hash is a process that can be used to see if various types of input or valid and authentic. Qualities that make a hash "good" are that it should uniformly distribute the keys and it should be efficiently computable. A CA is short for Certificate Authority, and the role that it plays is that it validates the identities of websites and issues electronic documents which are known as digital certificates. SSL interception can be prevented by not sharing sensitive information on non HTTPS sites, avoiding clicking on spam emails, and always using a safe computer when browsing the Internet. SSL inteception can be detected if your laptop is monitored by an organization that you're a part of, such as this laptop being monitored by Allen ISD. A false positive is when a test result shows the wrong result of a condition and a false negative is the opposite error where the test result incorrectly shows that the conditions is not there when it is actually present. I think that the school/government/ISP does not have a right to eavesdrop on conversations because that is your personal information and no one has a right to look at that but you(unless the government has a warrant for it).</p>
+
+<img src="https://i.postimg.cc/vH4f5Pc5/flowchart.png" alt="flowchart of authentic fingerprint retrieved from browser">
+
+      <h2>References</h2>
+      <p>Gibson,S (2020) Fingerprints: GRC. https://www.grc.com/fingerprints.htm#top</p>
+      <p>Swinhoe,D(2022, March 15) Man-in-the-middle(MitM) attack definition and examples: Man-in-the-middle cyberattacks allow attackers to intercept communications or alter them. Detecting MitM attacks is difficult, but they are preventable. csoonline. https://www.csoonline.com/article/3340117/man-in-the-middle-attack-definition-and-examples.html</p>
+      <p>Constantin,L(2021, January 13) Hashing explained: Why it's your best bet to protect stored passwords: Hashing makes it harder for attackers to decrypt stored passwords, if used correctly. csoonline. https://www.csoonline.com/article/3602698/hashing-explained-why-its-your-best-bet-to-protect-stored-passwords.html</p>
+      <p>Deepika,R(2021, March 18) What are Hash Functions and How to choose a good Hash Function? geeksforgeeks. https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/</p>
+<p>Bychkov,A(2016,April 5) How can I detect HTTPS inspection. security.stackexchange.com https://security.stackexchange.com/questions/119364/how-can-i-detect-https-inspection</p>
+<p>Wikipedia(2022, May 16) False positives and false negatives. wikipedia. https://en.wikipedia.org/wiki/False_positives_and_false_negatives</p>
+<p>Content,A(2021, December 6) What is a Certificate Authority(CA)? ssl.com. www.ssl.com/faqs/what-is-a-certificate-authority/</p>
+
+      
+	
+	
+      
+	
+	
+	
+
+
+
+
+
+
+
+
+      
+    </main>
+    </html>
