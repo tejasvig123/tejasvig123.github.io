@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.cs">
+    <body>
+      <header>
+	<h1>AI Sentience</h1>
+      </header>
+      <div style="padding: 7px">
+	<a href="index.html" class='navBar'>About Me</a>
+	&nbsp; &nbsp;
+	<a href="portfolioreal.html" class='navBar'>Portfolio</a>
+	&nbsp; &nbsp;
+	<a href="isp.html" class='navBar'>ISP</a>
+	&nbsp; &nbsp;
+	<a href="fingerprints.html" class='navBar'>Fingerprints</a>
+	&nbsp; &nbsp;
+	<a href="Sentience.html" class='navBar'>AI Sentience</a>
+      </div>
+
+      <main>
+      </main>
+    </body>
+    </html>
+	
