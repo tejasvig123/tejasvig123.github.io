@@ -3,7 +3,7 @@
 body {
     background-color: lightgray;
     font-family: Times New Roman;
-    font-size: 12pt;
+    font-size: 13pt;
 }
 main {
     text-align: center;
@@ -13,8 +13,8 @@ div.essay{
     line-height: 2;
 }
 main.essay {
-    padding-left: 12.5vw;
-    padding-right: 12.5vw
+    padding-left: 15.0vw;
+    padding-right: 15.0vw
 }
 h1 {
     color: #980C7C;
