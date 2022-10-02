@@ -2,7 +2,7 @@
 
 body {
     background-color: lightgray;
-    font-family: Times New Roman;
+    font-family: Tahoma;
     font-size: 13pt;
 }
 main {
@@ -11,10 +11,14 @@ main {
 div.essay{
     text-align: justify;
     line-height: 2;
+    text-indent: 60px;
+}
+div.main {
+    text-align: justify;
 }
 main.essay {
     padding-left: 15.0vw;
-    padding-right: 15.0vw
+    padding-right: 15.0vw;
 }
 h1 {
     color: #980C7C;
@@ -47,7 +51,9 @@ p {
 }
 h3 {
     text-align: center;
+    font-weight: normal;
 }
 h2 {
     text-align: center;
+    font-weight: normal;
 }
