@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+    <body>
+      <header>
+	<h1>Decision Bias Essay</h1>
+      </header>
+      <div style="padding: 7px">
+	<a href="../../index.html" class='navBar'>About Me</a>
+	&nbsp; &nbsp;
+	<a href="../portfolioreal.html" class='navBar'>Portfolio</a>
+	&nbsp; &nbsp;
+	<a href="isp.html" class='navbar'>ISP</a>
+	&nbsp; &nbsp;
+	<a href="fingerprints.html" class='navBar'>Fingerprints</a>
+	&nbsp; &nbsp;
+	<a href="../Projects/Optimal Sort.html" class='navBar'>Optimal Sort</a>
+	&nbsp; &nbsp;
+	<a href="../Projects/Business Plan/index.html" class='navBar'>ISP Proposal</a>
+      </div>
+
+      <main class="essay">
+	<h3>Decision Biases and How I Overcame Them</h3>
+	<h3>Tejasvi Gutta</h3>
+	<h3>Allen ISD Steam Center</h3>
+	<h3>Advanced Computer Science II</h3>
+	<h3>Mr.Ben-Yaakov</h3>
+	<h3>December 9th</h3>
+
+	<div class="essay">
