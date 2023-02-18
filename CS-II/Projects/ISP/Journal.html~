@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../style.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1>ISP Journal</h1>
+    </header>
+    <main class="essay">
+      <a href="../Business Plan/index.html">Back to ISP Proposal</a>
+      <p><b>30 Jan 2023</b></p>
+      <p>Technical Challenges: There were many because it was a snow week, and I also couldn't use my laptop this whole week because I wasn't allowed to.</p>
+      <p>Scheduling Challenges: Challenges that we had were that since it was a snow week, we didn't do anything productive this week. However, we got our presentation done for our ISP Proposal, which was mostly done by our release engineer.</p>
+      <p>Interpersonal Challenges: There were none because everything went smoothly this week, except for the fact that we got a whole week off of school.</p>
+								
+      <p><b>23 Jan 2023</b></p>
+      <p>Technical Challenges: Some challenges we had were configuring our github user with VS Code, but I figured it out by using Stack Overflow and helped the rest of my teammates.</p>
+      <p>Scheduling Challenges: We had some challenges with communicating with one of our team members that was in a different period,but I assigned him some tasks and they got to work on them.</p>
+      <p>Interpersonal Challenges: I called one of my teammates an idiot because they wouldn't understand why we had to add a simple concept to our project, and I apologized but I really think my teammate needs to figure out what is really important in our project because they are Product Manager after all, and not realizing a simple thing that needs to go into our project for it to work means that they are definitely not fit for that role. Another challenge was that some of my teammates asked if we could do something fun in our website and I said yes initially, but later I realized that we need to keep our website professional; after all, it is a medical diagnosis that people want, so I will turn them down later.</p>
+      <p><b>16 Jan 2023</b></p>
+      <p>Technical Challenges: Our main challenge was that we needed to figure out where we would write our code on, and we solved this by finally deciding on Visual Studio Code to write on.</p>
+      <p>Scheduling Challenges: We didn't have any scheduling challenges this week, so everything was fine.</p>
+      <p>Interpersonal Challenges: There were no interpersonal challenges this week.</p>
+
+      <p><b>9 Jan 2023</b></p>
+      <p>Technical Challenges: Our main challenge is that we still haven't figured out where to base our code on and where we can see a successful output. We will solve that by assigning that task to our release engineer, and we will get it done by next week Tuesday. Another challenge that we had was deciding which coding languages to use, and at the end we decided on mainly Java and a little bit of Swift for the people that do not know Java.</p>
+      <p>Scheduling Challenges: A scheduling challenge that my team faced this week was that one of our team members isn't in our period so I had to text them personally. They also couldn't send messages in the group chat for some reason so I messaged them personally and told them what to do.</p>
+      <p>Interpersonal Challenges: One interpersonal challenge I had was that one of my teammates cannot text in messages and that person always has to communicate through me which I know must be a hassle for them. To solve that, I will make another groupchat on a different app such as Instagram or Discord so we can all communicate properly and there will be no misunderstandings.</p>
+
+      <p><b>2 Jan 2023</b></p>
+
+      <p>(Software)Development Engineer: This is a programmer or a coder, and it's a person who designs computer programs to solve real-world probelems. I am very suitable to this role because I already know what algorithm to implement for my product to work. I am also a pretty good programmer. I except to encounter challenges like what language I should use because I am still unsure between Javascript and Swift. I will overcome that by researching a bit more and seeing what is best suited to my project.</p>
+      <p>QA Engineer: This person monitors every phase of the software development and checks for bugs. They also identify issues before a product launch, and run several tests before it. I am pretty suited to this role because I am meticulous and I am good at checking for errors. Some problems I might run into are unfamiliar bugs and I will overcome them by asking my fellow teammates.</p>
+      <p>Project Manager: This person is responsible for the planning, execution, and completion of a project. They make sure there is a role assigned to everyone, and takes care of the resources. They are also responsible for the budget and the success or failure of the product. I would be suited to this role well because I was the one who came up with this idea. Some problems that I might run into are that I am not good at leading people, but I will overcome that.</p>
+      <p>Product Manager: This person identifies the customer need and the objectives that their product will fill when it's released. They are also in charge of lauching the product. I am not suited for this because I am not good at seeing what the audience wants.<p>
+      <p>Release Engineer: This person is responsible for deciding where the product's software will be hosted on. They are the ones deciding how the testing,packaging, and deployment is conducted.</p> 
+
+      

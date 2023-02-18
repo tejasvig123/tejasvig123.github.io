@@ -20,6 +20,9 @@ main.essay {
     padding-left: 15.0vw;
     padding-right: 15.0vw;
 }
+h3.hi {
+    font-weight: normal;
+}
 h1 {
     color: #980C7C;
     text-transform: uppercase;
@@ -51,7 +54,7 @@ p {
 }
 h3 {
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
 }
 h2 {
     text-align: center;
