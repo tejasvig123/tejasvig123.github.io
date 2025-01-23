@@ -1,64 +1,189 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../style.css"/>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fingerprints</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-  <body>
-    <header>
-      <h1>Fingerprints</h1>
-    </header>
-    <div style="padding: 7px">
-      <a href="../../index.html" class='navBar'>About Me</a>
-      &nbsp; &nbsp;
-      <a href="../portfolioreal.html" class='navBar'>Portfolio</a>
-      &nbsp; &nbsp;
-      <a href="../isp.html" class='navBar'>ISP</a>
-      &nbsp; &nbsp;
-      <a href="Essays/fingerprints.html" class='navBar'>Fingerprints</a>
-      &nbsp; &nbsp;
-      <a href="AI Sentience.html" class='navBar'>AI Sentience</a>
-      &nbsp; &nbsp;
-      <a href="../Projects/Optimal Sort.html" class='navBar'>Optimal Sort</a>
-      &nbsp; &nbsp;
-      <a href="../Projects/Business Plan/index.html" class='navBar'>ISP Proposal</a>
+    header {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      padding: 1rem 0;
+      background: white;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 1rem;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0073e6;
+    }
+
+    nav a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background: #0073e6;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    main h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    main h3 {
+      font-weight: 500;
+      color: #555;
+    }
+
+    main p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    main img {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 1.5rem auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    main img.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fingerprints</h1>
+  </header>
+
+  <nav>
+    <a href="../../index.html">About Me</a>
+    <a href="../portfolioreal.html">Portfolio</a>
+    <a href="../isp.html">ISP</a>
+    <a href="Essays/fingerprints.html">Fingerprints</a>
+    <a href="AI Sentience.html">AI Sentience</a>
+    <a href="../Projects/Optimal Sort.html">Optimal Sort</a>
+    <a href="../Projects/Business Plan/index.html">ISP Proposal</a>
+  </nav>
+
+  <main>
+    <h3>Tejasvi Gutta</h3>
+    <h3>Allen ISD Steam Center</h3>
+    <h3>Advanced Computer Science II</h3>
+    <h3>Mr.Ben-Yaakov</h3>
+    <h3>September 9th</h3>
+
+    <div class="essay">
+      <p>Two purposes of a secure HTTPS connection are to secure communication and data transfer between the user and the website, and to encrypt all message contents. An HTTPS Proxy Appliance secures a web server and guarantees browser privacy and security (Gibson 2020, p1). An MITM (Man-In-The-Middle) attack is a cyberattack where communication between two parties is intercepted, often to steal personal information or corrupt data. This presents many risks, including the theft of data like credit card numbers, which could be sold to third-party dealers, resulting in a financial loss.</p>
+
+      <p>A hash is a process used to verify if inputs are valid and authentic. A "good" hash should uniformly distribute keys and be efficiently computable. A CA (Certificate Authority) validates website identities and issues digital certificates. SSL interception can be prevented by not sharing sensitive information on non-HTTPS sites, avoiding spam emails, and using secure computers for browsing. SSL interception can be detected if monitored by an organization like Allen ISD. A false positive shows the wrong result, while a false negative shows the opposite error. I believe the school, government, or ISP does not have the right to eavesdrop on personal conversations unless authorized by a warrant.</p>
     </div>
 
-    <main class="essay">
-      <h2>Questions</h2>
-      <h3>Tejasvi Gutta</h3>
-      <h3>Allen ISD Steam Center</h3>
-      <h3>Advanced Computer Science II</h3>
-      <h3>Mr.Ben-Yaakov</h3>
-      <h3>September 9th</h3>
-<div class="essay"> Two purposes of a secure HTTPS connection is that it secures communication and the data transfer between the user and the website. It also encrypts all the message contents. An HTTPS Proxy Appliance is something that secures a web server and have a "gurantee of Internet browser privacy and security"(Gibson 2020 p1). An MITM is short for "man in the middle attack" which is a cyberattack where communication between two parties is intercepted often to steal personal information and corrupt data. This presents many risks because if someone stole your data such as your credit card number they could use that number and sell it to other third party dealers which would mean a loss of money. A hash is a process that can be used to see if various types of input or valid and authentic. Qualities that make a hash "good" are that it should uniformly distribute the keys and it should be efficiently computable. A CA is short for Certificate Authority, and the role that it plays is that it validates the identities of websites and issues electronic documents which are known as digital certificates. SSL interception can be prevented by not sharing sensitive information on non HTTPS sites, avoiding clicking on spam emails, and always using a safe computer when browsing the Internet. SSL inteception can be detected if your laptop is monitored by an organization that you're a part of, such as this laptop being monitored by Allen ISD. A false positive is when a test result shows the wrong result of a condition and a false negative is the opposite error where the test result incorrectly shows that the conditions is not there when it is actually present. I think that the school/government/ISP does not have a right to eavesdrop on conversations because that is your personal information and no one has a right to look at that but you(unless the government has a warrant for it).</div>
+    <img src="https://i.postimg.cc/vH4f5Pc5/flowchart.png" alt="Flowchart of authentic fingerprint retrieved from browser">
 
-<img src="https://i.postimg.cc/vH4f5Pc5/flowchart.png" alt="flowchart of authentic fingerprint retrieved from browser">
+    <h2>References</h2>
+    <p>Gibson, S. (2020) Fingerprints: GRC. <a href="https://www.grc.com/fingerprints.htm#top" target="_blank">grc.com</a></p>
+    <p>Swinhoe, D. (2022, March 15) Man-in-the-middle (MitM) attack definition and examples: Man-in-the-middle cyberattacks allow attackers to intercept or alter communications. <a href="https://www.csoonline.com/article/3340117/man-in-the-middle-attack-definition-and-examples.html" target="_blank">csoonline.com</a></p>
+    <p>Constantin, L. (2021, January 13) Hashing explained: Why it's your best bet to protect stored passwords. <a href="https://www.csoonline.com/article/3602698/hashing-explained-why-its-your-best-bet-to-protect-stored-passwords.html" target="_blank">csoonline.com</a></p>
+    <p>Deepika, R. (2021, March 18) What are Hash Functions and How to Choose a Good Hash Function? <a href="https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/" target="_blank">geeksforgeeks.org</a></p>
+    <p>Bychkov, A. (2016, April 5) How can I detect HTTPS inspection. <a href="https://security.stackexchange.com/questions/119364/how-can-i-detect-https-inspection" target="_blank">security.stackexchange.com</a></p>
+    <p>Wikipedia (2022, May 16) False positives and false negatives. <a href="https://en.wikipedia.org/wiki/False_positives_and_false_negatives" target="_blank">wikipedia.org</a></p>
+    <p>Content, A. (2021, December 6) What is a Certificate Authority (CA)? <a href="https://www.ssl.com/faqs/what-is-a-certificate-authority/" target="_blank">ssl.com</a></p>
+  </main>
 
-      <h2>References</h2>
-      <p>Gibson,S (2020) Fingerprints: GRC. https://www.grc.com/fingerprints.htm#top</p>
-      <p>Swinhoe,D(2022, March 15) Man-in-the-middle(MitM) attack definition and examples: Man-in-the-middle cyberattacks allow attackers to intercept communications or alter them. Detecting MitM attacks is difficult, but they are preventable. csoonline. https://www.csoonline.com/article/3340117/man-in-the-middle-attack-definition-and-examples.html</p>
-      <p>Constantin,L(2021, January 13) Hashing explained: Why it's your best bet to protect stored passwords: Hashing makes it harder for attackers to decrypt stored passwords, if used correctly. csoonline. https://www.csoonline.com/article/3602698/hashing-explained-why-its-your-best-bet-to-protect-stored-passwords.html</p>
-      <p>Deepika,R(2021, March 18) What are Hash Functions and How to choose a good Hash Function? geeksforgeeks. https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/</p>
-<p>Bychkov,A(2016,April 5) How can I detect HTTPS inspection. security.stackexchange.com https://security.stackexchange.com/questions/119364/how-can-i-detect-https-inspection</p>
-<p>Wikipedia(2022, May 16) False positives and false negatives. wikipedia. https://en.wikipedia.org/wiki/False_positives_and_false_negatives</p>
-<p>Content,A(2021, December 6) What is a Certificate Authority(CA)? ssl.com. www.ssl.com/faqs/what-is-a-certificate-authority/</p>
+  <footer>
+    <p>© 2024 Tejasvi Gutta. All rights reserved.</p>
+  </footer>
 
-      
-	
-	
-      
-	
-	
-	
+  <script>
+    // Reveal Elements on Scroll
+    const images = document.querySelectorAll('main img');
 
+    const revealImagesOnScroll = () => {
+      const triggerHeight = window.innerHeight * 0.9;
+      images.forEach(img => {
+        const imgTop = img.getBoundingClientRect().top;
+        if (imgTop < triggerHeight) {
+          img.classList.add('show');
+        }
+      });
+    };
 
+    window.addEventListener('scroll', revealImagesOnScroll);
 
-
-
-
-
-
-      
-    </main>
-    </html>
+    // Initial trigger
+    revealImagesOnScroll();
+  </script>
+</body>
+</html>
