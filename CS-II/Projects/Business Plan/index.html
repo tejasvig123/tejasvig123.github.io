@@ -1,59 +1,160 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../../style.css"/>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISP Proposal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
 
-  <body>
-    <header>
-      <h1>ISP Proposal</h1>
-      <div style="padding: 7px">
-	<a href="../../../index.html" class='navBar'>About Me</a>
- 	&nbsp; &nbsp;
-	<a href="../../portfolioreal.html" class='navBar'>Portfolio</a>
-	&nbsp; &nbsp;
-	<a href="../../isp.html" class='navBar'>ISP</a>
-	&nbsp; &nbsp; 
-	<a href="../../Essays/fingerprints.html" class='navBar'>Fingerprints</a>
-	&nbsp; &nbsp;
-	<a href="../../Essays/AI Sentience.html" class='navBar'>AI Sentience</a>
-	&nbsp; &nbsp;
-	<a href="../Optimal Sort.html" class='navBar'>Optimal Sort</a>
-	&nbsp; &nbsp;
-	<a href="index.html" class='navBar'>ISP Proposal</a>
-      </div>
-&nbsp; &nbsp;
-      
-      <main class="essay">
-<p>	<a href="considered.html">Considered Proposals</a> </p>
-<p><a href="../ISP/index.html">ISP 2022-2023</a></p>
-<a href="../ISP/Journal.html">ISP Journal</a>
-	
-	<h3>Identity</h3>
-	<p>The Symptoms Quiz is exactly what it sounds like: it tells you what illness you have based off your symptoms and several other factors. Simple and efficient for especially when you don't want to go to a doctor, the Symptoms Quiz is perfect for people who want a quick diagnosis that is not only accurate but will also give you ways to make that illness better. Keep in mind though, this is NOT a professional diagnosis, and if your symptoms are extremely severe, we highly recommend you to go to a doctor and get it checked out.</p>
+    header {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-	 <h3>Problem</h3>
-	 <p>Picture this: you're out sick and you're sitting in bed. You're experiencing some weird symptoms but you don't want the hassle of going to the doctor so you decide to search it up. You look at the results but they're not at all what you're expecting. According to Google, you now have a severe case of tuberculosis and pneumonia and you know for a fact that you don't. Today I am here to solve the problem of getting inaccurate results every time you search up your symptom.
-	   <h3>Solution</h3>
-	 <p>My solution is a quiz. But not just any quiz. I will be making an enormous healthcare quiz compiled of over 30 results from the common cold to ear infection and to pinkeye. This quiz will input the symptoms of every common illness and and take into account your gender, age, previous illnesses, and everything you could possibly think of to give you the most accurate result. In addition to diagnosing, this will also give you options on how to treat it.</p>
-	 <h3>The competition</h3>
-	 <p>A major competitition for this product is WebMD, which is a leading source in medical news and diagnosing symptoms. Even though they specialize in diagnosing anything, since the main focus of this product is diagnosing common physical illnesses, I will be putting all of my time into just that specific category which at the end will make my results more accurate than WebMD. </p>
-	 <h3>Target Market</h3>
-	 <p>The target market is everyone who uses the internet and gets sick sometimes, unless you are practically invincible, then we have nothing for you.</p>
-	 <h3>Revenue Streams</h3>
-	 <p>Users will have a free trial for the first month, and if they are satisfied with the product and want to keep using it, they will have to pay a low monthly fee of just $1.99 a month or they could pay a lifetime fee instead of $40 dollars. Then again, this is just a prototype so it will be completely free for now.</p>
-	 <h3>Expenses</h3>
-	 <p>For now, there will be no expenses needed for this project because it is mainly consisted of extensive research instead of relying on material goods or any special software.</p>
-	 <h3>Marketing Activities</h3>
-	 <p>Some marketing activities that I might possibly implement will be emailing promotions to people and using ads on Youtube. I might also advertise it on Tiktok by using a skit to gain the viewers' attention. </p>
-	 <h3>Team and Key Roles</h3>
-	 <p>Right now, the team consists of just me and Andrew, another student in my CS-II class, but as my idea gains more attention, I will have more people join who like this idea and would like to make it a reality. </p>
-	 <h3>Milestones</h3>
-	 <p>As my product grows, I will include other features such as a body map to pinpoint where exactly the symptoms are and in the late future there could possibly be a doctor on standby that you could videocall.</p>
-	 <p>
-	   <a href="https://docs.google.com/spreadsheets/d/1uvFfAF5vbozn1KueZDKAVy-umtn1Ri-JNBU6J26H3HQ/edit?usp=sharing">Gantt Chart</a>
-	   </p>
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
 
-       </main>
-  </body>
-  </html>
+    nav {
+      text-align: center;
+      padding: 1rem 0;
+      background: white;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0073e6;
+    }
+
+    nav a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background: #0073e6;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    main h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    main h3 {
+      font-weight: 500;
+      color: #555;
+    }
+
+    main p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ISP Proposal</h1>
+  </header>
+
+  <nav>
+    <a href="../../../index.html">About Me</a>
+    <a href="../../portfolioreal.html">Portfolio</a>
+    <a href="../../isp.html">ISP</a>
+    <a href="../../Essays/fingerprints.html">Fingerprints</a>
+    <a href="../../Essays/AI Sentience.html">AI Sentience</a>
+    <a href="../Optimal Sort.html">Optimal Sort</a>
+    <a href="index.html">ISP Proposal</a>
+  </nav>
+
+  <main>
+    <p><a href="considered.html">Considered Proposals</a></p>
+
+    <h2>Identity</h2>
+    <p>The Symptoms Quiz is exactly what it sounds like: it tells you what illness you have based on your symptoms and several other factors. Simple and efficient, it’s perfect for when you don’t want to go to a doctor. The Symptoms Quiz is ideal for people who want a quick diagnosis that is accurate and offers ways to improve your condition. However, it is NOT a professional diagnosis, and for severe symptoms, we highly recommend seeing a doctor.</p>
+
+    <h2>Problem</h2>
+    <p>Picture this: you're sick and lying in bed. You experience unusual symptoms but don’t want the hassle of going to the doctor. You search online, but the results are far from what you expected. According to Google, you now have tuberculosis and pneumonia—something you know isn't true. This is the problem I aim to solve: inaccurate symptom results.</p>
+
+    <h2>Solution</h2>
+    <p>My solution is a quiz. But not just any quiz. I’ll create an extensive healthcare quiz featuring over 30 common illnesses, from the common cold to pink eye. The quiz will consider your symptoms, age, gender, past illnesses, and other factors to provide the most accurate result. Along with diagnosing, it will also offer options for treatment.</p>
+
+    <h2>The Competition</h2>
+    <p>A major competitor for this product is WebMD, a leading source in medical news and diagnosing symptoms. While WebMD covers a wide range of medical issues, this product will focus solely on diagnosing common physical illnesses, allowing for greater accuracy than WebMD in this specific area.</p>
+
+    <h2>Target Market</h2>
+    <p>The target market is anyone who uses the internet and occasionally gets sick. Unless you’re invincible, this product is for you.</p>
+
+    <h2>Revenue Streams</h2>
+    <p>Users will receive a free trial for the first month. If they are satisfied with the product and want to continue, they can subscribe for a low monthly fee of $1.99 or pay a one-time lifetime fee of $40. For now, as it’s a prototype, the service is completely free.</p>
+
+    <h2>Expenses</h2>
+    <p>Currently, there are no major expenses for this project since it mainly involves extensive research rather than relying on physical goods or special software.</p>
+
+    <h2>Marketing Activities</h2>
+    <p>Marketing strategies might include email promotions, YouTube ads, and TikTok skits to grab attention and engage potential users.</p>
+
+    <h2>Team and Key Roles</h2>
+    <p>Currently, the team consists of me and Andrew, a fellow student in my CS-II class. As the idea gains traction, I expect more people to join and help bring the project to life.</p>
+
+    <h2>Milestones</h2>
+    <p>As the product develops, I plan to add features like a body map to pinpoint symptoms and potentially offer video calls with a doctor in the future.</p>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Tejasvi Gutta. All rights reserved.</p>
+  </footer>
+</body>
+</html>
