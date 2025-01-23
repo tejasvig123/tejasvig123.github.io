@@ -1,48 +1,151 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../style.css">
-    <body>
-      <header>
-	<h1>AI Sentience</h1>
-      </header>
-      <div style="padding: 7px">
-	<a href="../../index.html" class='navBar'>About Me</a>
-	&nbsp; &nbsp;
-	<a href="../portfolioreal.html" class='navBar'>Portfolio</a>
-	&nbsp; &nbsp;
-	<a href="../isp.html" class='navBar'>ISP</a>
-	&nbsp; &nbsp;
-	<a href="fingerprints.html" class='navBar'>Fingerprints</a>
-	&nbsp; &nbsp;
-	<a href="AI Sentience.html" class='navBar'>AI Sentience</a>
-	&nbsp; &nbsp;
-	<a href="../Projects/Optimal Sort.html" class='navBar'>Optimal Sort</a>
-	&nbsp; &nbsp;
-	<a href="../Projects/Business Plan/index.html" class='navBar'>ISP Proposal</a> 
-      </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Sentience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-      <main class="essay">
+    header {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-	<h3>AI Sentience is a benefit for all humans</h3>
-	<h3>Tejasvi Gutta</h3>
-	<h3>Allen ISD Steam Center</h3>
-	<h3>Advanced Computer Science II</h3>
-	<h3>Mr.Ben-Yaakov</h3>
-	<h3>September 2nd</h3>
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
 
-	<div class="essay">Ever wondered what it would be like if robots lived in our society as citizens in our world? And even better, they had real, lifelike emotions that us humans have? Those type of robots are called sentient AI. That means that the robot can think, perceive, and feel just like how a human does on a daily basis, but the difference between sentient and non-sentient is that these feelings are not pre-programmed by someone else, instead of faking the emotions they can actually feel them. Sentient AI will lead to a utopia for everyone because they can help us do everyday tasks and they have superhuman abilities.  </div>
-	<div class="essay">The first reason why sentient AI is good for humans is because it reduces human error. This term talks about the common errors that a human makes, but a computer could never make that type of mistake because it is not in its code. As said by towardsdatascience, a computer's decisions are made by using the data from the previous choices and using that to reduce errors and to reach a higher accuracy (Kumar, 2019). This is definitely something that a human brain couldn't do because of the many limitations that we have.</p>
-	<div class="essay">The second reason on why sentient AI is beneficial for us is because it is available 24/7. For example, us humans can only work for 6-8 hours a day at a time, and that's including breaks. But if we program AI, they would do it for us every minute and we wouldn't even need to worry about them making errors because they aren't human. Another example was when the Chernobyl power plant exploded and since humans couldn't go there themselves because of the high risk of radiation, if there were robots powered by AI at that time, we could have learned more about what caused that explostion and why (Kumar, 2019). <p>
-	  <div class="essay">The third and final reason on why AI Sentience is beneficial to humanity is because they can make faster decisions than us humans. For example, if you play any online game against an AI and put it in hard mode, it will be nearly impossible to beat because its decisions are already preloaded and the CPU is much, much faster than us. When humans work on a solution, we will look at it in an emotional and a practical way but when a computer or an AI is analyzing it, it will only look at what it was programmed for and make a choice immediately.</p>
-	<div class="essay">In conclusion, AI Sentience will help our world for the better because it can reduce human error, it is available at any time of the day, and because it can make immensely faster decisions than humans. So the next time you ask your Alexa or Siri the weather, remember that at a later point in time they could be saving lives too.</p>
+    nav {
+      text-align: center;
+      padding: 1rem 0;
+      background: white;
+    }
 
-	<h3>References</h3>
-	<div class="essay">Srivastava, R., &amp; Bhatt, V. (2022, April 28). Five benefits that artificial sentience brings to your ecommerce business. Ksolves Blog. Retrieved September 21, 2022, from https://www.ksolves.com/blog/artificial-intelligence/five-benefits-that-artificial-sentience-brings-to-your-ecommerce-business#:~:text=Artificial%20Sentience%20not%20only%20helps,to%20these%20platforms%20and%20services. </p>
-	<div class="essay">Kumar, S. (2019, December 12). Advantages and disadvantages of Artificial Intelligence. Medium. Retrieved September 23, 2022, from https://towardsdatascience.com/advantages-and-disadvantages-of-artificial-intelligence-182a5ef6588c </p>
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 1rem;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
 
-	
-      </main>
-    </body>
-    </html>
-	
+    nav a:hover {
+      color: #0073e6;
+    }
+
+    nav a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background: #0073e6;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    main h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    main h3 {
+      font-weight: 500;
+      color: #555;
+    }
+
+    main p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Sentience</h1>
+  </header>
+
+  <nav>
+    <a href="../../index.html">About Me</a>
+    <a href="../portfolioreal.html">Portfolio</a>
+    <a href="../isp.html">ISP</a>
+    <a href="fingerprints.html">Fingerprints</a>
+    <a href="AI Sentience.html">AI Sentience</a>
+    <a href="../Projects/Optimal Sort.html">Optimal Sort</a>
+    <a href="../Projects/Business Plan/index.html">ISP Proposal</a>
+  </nav>
+
+  <main>
+    <h2>AI Sentience is a Benefit for All Humans</h2>
+    <h3>Tejasvi Gutta</h3>
+    <h3>Allen ISD Steam Center</h3>
+    <h3>Advanced Computer Science II</h3>
+    <h3>Mr. Ben-Yaakov</h3>
+    <h3>September 2nd</h3>
+
+    <p>Ever wondered what it would be like if robots lived in our society as citizens and had real, lifelike emotions just like humans? These robots are called sentient AI, meaning they can think, perceive, and feel like humans, but with the key difference that their emotions are genuine, not pre-programmed. Sentient AI will lead to a utopia where they assist us with everyday tasks and possess superhuman abilities.</p>
+
+    <p>The first reason sentient AI is good for humans is that it reduces human error. Unlike humans, who are prone to mistakes, AI decisions are based on data and past choices, which results in higher accuracy and fewer errors (Kumar, 2019).</p>
+
+    <p>The second reason is that sentient AI is available 24/7. Humans typically work 6-8 hours a day, but AI can work continuously without breaks. For instance, if AI-powered robots were available during the Chernobyl disaster, they could have gathered crucial information without exposing humans to dangerous radiation (Kumar, 2019).</p>
+
+    <p>The third reason is that AI can make decisions much faster than humans. For example, in an online game, an AI on hard mode is almost impossible to beat due to its quick, precise decision-making. Unlike humans, who consider emotions and practical factors, AI focuses solely on the task and executes decisions rapidly.</p>
+
+    <p>In conclusion, AI Sentience will greatly benefit humanity by reducing human error, being available around the clock, and making faster decisions. Next time you ask Alexa or Siri about the weather, remember that in the future, they could be saving lives too.</p>
+
+    <h3>References</h3>
+    <p>Srivastava, R., &amp; Bhatt, V. (2022, April 28). Five benefits that artificial sentience brings to your ecommerce business. Ksolves Blog. Retrieved September 21, 2022, from <a href="https://www.ksolves.com/blog/artificial-intelligence/five-benefits-that-artificial-sentience-brings-to-your-ecommerce-business#:~:text=Artificial%20Sentience%20not%20only%20helps,to%20these%20platforms%20and%20services." target="_blank">ksolves.com</a></p>
+
+    <p>Kumar, S. (2019, December 12). Advantages and disadvantages of Artificial Intelligence. Medium. Retrieved September 23, 2022, from <a href="https://towardsdatascience.com/advantages-and-disadvantages-of-artificial-intelligence-182a5ef6588c" target="_blank">towardsdatascience.com</a></p>
+  </main>
+
+  <footer>
+    <p>© 2024 Tejasvi Gutta. All rights reserved.</p>
+  </footer>
+</body>
+</html>
