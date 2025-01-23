@@ -1,41 +1,187 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-  <body>
+    header {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-    <header>
-      <h1>ISP</h1>
-      </header>
-    <div style="padding: 7px">
-      <a href="../index.html" class='navBar'>About Me</a>
-      &nbsp; &nbsp;
-      <a href="portfolioreal.html" class='navBar'>Portfolio</a>
-      &nbsp; &nbsp;
-      <a href="isp.html" class='navBar'>ISP</a>
-      &nbsp; &nbsp;
-      <a href="Essays/fingerprints.html" class='navBar'>Fingerprints</a>
-      &nbsp; &nbsp;
-      <a href="Essays/AI Sentience.html" class='navBar'>AI Sentience</a>
-      &nbsp; &nbsp;
-      <a href="Projects/Optimal Sort.html" class='navBar'>Optimal Sort</a>
-      &nbsp; &nbsp;
-      <a href="Projects/Business Plan/index.html" class='navBar'>ISP Proposal</a>
-    </div>
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
 
-    <main class="essay">
+    nav {
+      text-align: center;
+      padding: 1rem 0;
+      background: white;
+    }
 
-      <header>
-	<h2>Here you will learn all about the ISP I did last year such as the ups and downs, the concept, and the conclusion.</h2>
-      </header>
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 1rem;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
 
-      <p>First of all, the concept of the game is based off of an old Mario game called Paper Mario: The Thousand Year Door. The game has 10 levels with a certain amount of doors in each level and you must guess which door will get you to the next level. The number of doors also increase every level so that the game will be harder. The player is seeing through the eyes of "Zowser" , Bowser's alternate double, to save "Meek" Meach from the evil Zario. This game was designed to help players better their memory, for example, if you beat this game, that means that you memorized 10 levels worth of information which is a lot, and would benefit you in your daily life.</p>
-      <img src="https://assets-prd.ignimgs.com/2021/12/20/papermario100year-1640028954193.jpg" alt="cover of the game Paper Mario: The thousand year door">
-      <p>The motivation for this game was that me and my partner both had a love for the mario games, especially the retro ones so we really wanted to base our project off of one of those(and we really didn't want to make a platform game, we were kinda lazy).Some code segments that we used include enqueueTransitionScene and having the door open for when you prressed the right alphabet.</p>
-      <img src="https://i.postimg.cc/J4TyBjrc/transition-Scene-Code.jpg" alt="snippet of my code used for transitioning in between scenes">
+    nav a:hover {
+      color: #0073e6;
+    }
 
-      <p>Some things went as expected and some things didn't. For example, we were orignially supposed to have a character who could run, stop and jump but we were on such a time crunch that we scrapped all of that and instaed used keys to navigate through the levels. We were also supposed to have a final boss battle between Zowser and Zario but we realized that was too unidealistic so we scrapped that too. Some things that stayed though were the art that I drew and the idea to increase doors each level.</p>
-      <img src="https://i.postimg.cc/QdLbvL7y/zario.jpg" alt="image of zario, the villain from our game">
-      <p>Last year in CS, I learned a lot about Boolean Algebra, the basic syntaxes such as if conditions, while loops, for loops, and etc. I also learned how to make a game and I learned all about the User interface. I also learned how to read binary, hexadecimal, and a ton of other code.</p>
+    nav a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background: #0073e6;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    main h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    main p {
+      margin-bottom: 1.5rem;
+    }
+
+    main img {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 1.5rem auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    main img.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ISP</h1>
+  </header>
+
+  <nav>
+    <a href="../index.html">About Me</a>
+    <a href="portfolioreal.html">Portfolio</a>
+    <a href="isp.html">ISP</a>
+    <a href="Essays/fingerprints.html">Fingerprints</a>
+    <a href="Essays/AI Sentience.html">AI Sentience</a>
+    <a href="Projects/Optimal Sort.html">Optimal Sort</a>
+    <a href="Projects/Business Plan/index.html">ISP Proposal</a>
+  </nav>
+
+  <main>
+    <h2>Explore My ISP Journey</h2>
+    <p>
+      Here you will learn all about the ISP I did last year, including the ups and downs, the concept, and the conclusion.
+    </p>
+
+    <p>
+      The concept of the game is based on an old Mario game called <em>Paper Mario: The Thousand-Year Door</em>. The game features 10 levels, each with an increasing number of doors to choose from. The player must guess which door leads to the next level. You play as "Zowser," Bowser's alternate double, trying to save "Meek" Meach from the evil Zario.
+    </p>
+
+    <img src="https://assets-prd.ignimgs.com/2021/12/20/papermario100year-1640028954193.jpg" alt="Cover of the game Paper Mario: The Thousand-Year Door">
+
+    <p>
+      The motivation for this game came from my and my partner's love for retro Mario games. We also wanted to avoid making a platformer due to time constraints. Some features included <code>enqueueTransitionScene</code>, allowing doors to open when pressing the correct key.
+    </p>
+
+    <img src="https://i.postimg.cc/J4TyBjrc/transition-Scene-Code.jpg" alt="Snippet of transition scene code">
+
+    <p>
+      Challenges included scrapping a character with running, stopping, and jumping animations due to time constraints. We also eliminated a final boss battle between Zowser and Zario. However, the custom artwork and increasing door count per level remained as planned.
+    </p>
+
+    <img src="https://i.postimg.cc/QdLbvL7y/zario.jpg" alt="Zario, the villain from our game">
+
+    <p>
+      Through this project, I learned a lot about Boolean Algebra, conditionals, loops, game design, and user interfaces. I also gained experience reading binary, hexadecimal, and other coding concepts.
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2024 Tejasvi Gutta. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Reveal Elements on Scroll
+    const images = document.querySelectorAll('main img');
+
+    const revealImagesOnScroll = () => {
+      const triggerHeight = window.innerHeight * 0.9;
+      images.forEach(img => {
+        const imgTop = img.getBoundingClientRect().top;
+        if (imgTop < triggerHeight) {
+          img.classList.add('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealImagesOnScroll);
+
+    // Initial trigger
+    revealImagesOnScroll();
+  </script>
+</body>
+</html>

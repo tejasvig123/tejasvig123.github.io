@@ -1,36 +1,171 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-  <body>
-    <header>
-      <h1>Portfolio</h1>
-      <div style="padding: 7px">
-	<a href="../index.html" class='navBar'>About Me</a>
-	&nbsp; &nbsp;
-	<a href="portfolioreal.html" class='navBar'>Portfolio</a>
-	&nbsp; &nbsp;
-	<a href="isp.html" class='navBar'>ISP</a>
-	&nbsp; &nbsp;
-	<a href="Essays/fingerprints.html" class='navBar'>Fingerprints</a>
-	&nbsp; &nbsp;
-	<a href="Essays/AI Sentience.html" class='navBar'>AI Sentience</a>
-	&nbsp; &nbsp;
-	<a href="Projects/Optimal Sort.html" class='navBar'>Optimal Sort</a>
-	&nbsp; &nbsp;
-	<a href="Projects/Business Plan/index.html" class='navBar'>ISP Proposal</a>
-      </div>
-      <main class="essay">
+    header {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-	<header>
-	  <h2>Why is my digital portfolio important to me?</h2>
-	</header>
-	<h3 class="hi">My digital portfolio is important to me because it showcases all of my best work in a neat and concise way. Another reason it is important is because you can send the portfolio you make to jobs for interviews and etc. and potentially start working just because of something you made in CS 2. The last reason I think portfolios are important is because you can look back at your old projects and think of what you improved on and what you need to improve on, which I think is really nice.</h3>
-	<h2>Some classes I took!</h2>
-	<h3 class="hi">Classes that I took in high school and outside include CS I, BYJUS Future School, Girls Who Code Self Paced Program, and CS II which I am taking right now.<h3>
-	    <h3 class="hi">My schedule this year consists of Varsity Tennis, Physics Advanced, Computer Science II, Animation II, AP English, AP Us History and Algebra 2 Advanced.</h3>
-	    <img src="https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1566836043/1566836041.jpg" alt="picture of a person coding, face is not shown" class="center">
-      </main>
-      </html>
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      padding: 1rem 0;
+      background: #ffffff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 1rem;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0073e6;
+    }
+
+    nav a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background: #0073e6;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #0073e6;
+    }
+
+    main h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    main p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    img.center {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="../index.html">About Me</a>
+      <a href="portfolioreal.html">Portfolio</a>
+      <a href="isp.html">ISP</a>
+      <a href="Essays/fingerprints.html">Fingerprints</a>
+      <a href="Essays/AI Sentience.html">AI Sentience</a>
+      <a href="Projects/Optimal Sort.html">Optimal Sort</a>
+      <a href="Projects/Business Plan/index.html">ISP Proposal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Why is my digital portfolio important to me?</h2>
+      <h3>
+        My digital portfolio is important to me because it showcases all of my best work in a neat and concise way. 
+        Another reason it is important is because you can send the portfolio you make to jobs for interviews and more, 
+        potentially starting your career with something you made in CS II. 
+        Lastly, portfolios let you reflect on past projects and identify areas for improvement, which is incredibly rewarding.
+      </h3>
+    </section>
+
+    <section>
+      <h2>Some Classes I Took</h2>
+      <h3>
+        Classes that I took in high school and outside include CS I, BYJUS Future School, Girls Who Code Self-Paced Program, 
+        and CS II, which I am currently enrolled in. My current schedule includes Varsity Tennis, Physics Advanced, 
+        Computer Science II, Animation II, AP English, AP US History, and Algebra 2 Advanced.
+      </h3>
+      <img src="https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1566836043/1566836041.jpg" 
+           alt="Picture of a person coding, face not shown" 
+           class="center">
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Tejasvi Gutta. All rights reserved.</p>
+    <p><a href="https://github.com/tejasvig123/Digital-Portfolio.git">Visit My GitHub</a></p>
+  </footer>
+</body>
+</html>
